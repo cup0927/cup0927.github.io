@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>skirt</title>
+    <style>
+        * {
+            font-family:sans-serif;
+        }
+        body {
+                background: url(./img/background.jpg)no-repeat center center fixed;
+                background-size:cover;
+            }
+            h1 {
+                text-align:center;
+                color:rgb(151, 84, 8);
+            }
+            #grid {
+                display:grid;
+                grid-template-columns:240px 1fr;
+                overflow:auto;
+                margin-top:50px;
+                
+            }
+            div {
+                border-radius: 10px;
+                padding:30px;
+                background-color: wheat;
+            }
+            img {
+                padding:10px;
+            }
+
+    </style>
+</head>
+<body>
+    <h1>SKIRT</h1>
+    <div id="grid">
+        <img src="./img/skirt1.jpg">
+        <div>
+            가격: 15000원
+            <form>
+                <input type="submit" value="장바구니">
+                <input type="submit" value="바로구매">
+            </form>
+        </div>
+        <img src="./img/skirt2.jpg">
+        <div>
+            가격: 20000원
+            <form>
+                <input type="submit" value="장바구니">
+                <input type="submit" value="바로구매">
+            </form>
+        </div>
+        <img src="./img/skirt3.jpg">
+        <div>
+            가격: 22000원
+            <form>
+                <input type="submit" value="장바구니">
+                <input type="submit" value="바로구매">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>outer</title>
+    <style>
+        * {
+            font-family:sans-serif;
+        }
+        body {
+                background: url(./img/background.jpg)no-repeat center center fixed;
+                background-size:cover;
+            }
+        div {
+            background-color: wheat;
+            border-radius: 10px;
+            padding:30px;
+
+            }
+            h1 {
+                text-align:center;
+                color:rgb(151, 84, 8);
+            }
+            #grid {
+                display:grid;
+                grid-template-columns:170px 1fr 1fr 1fr;
+                overflow:auto;
+                margin-top:50px;
+            }
+            img {
+                padding:10px;
+            }
+
+    </style>
+</head>
+<body>
+    <h1>outer</h1>
+    <div id="grid">
+        <img src="./img/outer.jpg">
+        <div>
+            가격: 45000원
+            <form>
+                <input type="submit" value="장바구니">
+                <input type="submit" value="바로구매">
+            </form>
+        </div>
+        <img src="./img/outer1.jpg">
+        <div>
+            가격: 20000원
+            <form>
+                <input type="submit" value="장바구니">
+                <input type="submit" value="바로구매">
+            </form>
+        </div>
+        <img src="./img/outer2.jpg">
+        <div>
+            가격: 22000원
+            <form>
+                <input type="submit" value="장바구니">
+                <input type="submit" value="바로구매">
+            </form>
+        </div>
+        <img src="./img/outer3.jpg">
+        <div>
+            가격:33000원
+            <form>
+                <input type="submit" value="장바구니">
+                <input type="submit" value="바로구매">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
