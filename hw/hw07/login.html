@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LOG-IN</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        body {
+            background: url(./img/background.jpg)no-repeat center center fixed;
+            background-size: cover;
+        }
+        h1 {
+            color:rgb(138, 12, 12);
+            margin-top:100px;
+            text-align: center;
+        }
+        #form1 {
+            text-align: center;
+            display:inline-block;
+            height:150px;
+            width:300px;
+            border:bisque solid 7px;
+            border-radius:10px;
+            padding-top:50px;
+            box-shadow: 2px 2px 5px;
+        }
+        #form2 {
+            margin-top:60px;
+            text-align: center;
+        }
+        div {
+            margin-top:100px;
+            text-align: center;
+        }
+        span {
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>LOGIN</h1>
+    <div>
+    <form id="form1">
+        <p><span>ID</span> :&nbsp; <input type="text" name="ID" size="15" required></p>
+        <p><span>PW</span> :&nbsp; <input type="password" name="pw" size="15" placeholder="PASSWORD" required></p>
+    </form>
+   </div>
+    <p></p>
+    <form id="form2">
+    <input type="submit" value="로그인">&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="reset" value="다시작성">
+    </form>
+
+</body>
+</html>

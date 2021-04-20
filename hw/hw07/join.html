@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>회원가입</title>
+        <style>
+             * {
+                 text-align: center;
+                font-family:sans-serif;
+            }
+            body {
+                background: url(./img/background.jpg)no-repeat center center fixed;
+                background-size:cover;
+            }
+            h1 {
+                margin:50px;
+                color:rgb(51, 24, 24)
+            }
+            form {
+                margin:30px;
+                color:rgb(245, 243, 243)
+            }
+            fieldset {
+                margin-bottom:20px;
+                font-weight:bold;
+                border-color: lavenderblush;
+                box-shadow: 2px 2px 5px;
+                height:400px;
+
+            }
+            #join {
+                text-align: center;
+            }
+            legend {
+                font-size:20px;
+            }
+            #ID {
+                margin-top:30px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h1>☻ 회원 가입 ☻</h1>
+        <form>
+            <fieldset>
+                <legend> 개인정보 입력 </legend>
+                <p id="ID">아이디: <input type="text" name="id"> <input type="reset" nmae="check" value="ID중복검사"></p> 
+                <p>생년월일: <input type="date"></p>
+                <p>성별:<input type="radio" name="sex" value="male">남성
+                       <input type="radio" name="sex" value="female" checked >여성</p>
+                <p>E-MAIL:<input type="email" name="myemail"></p>   
+                <P>메일수신:<input type="radio" name="except" value="ok">수신동의
+                        <input type="radio" name="except" value="no" checked >수신거부</p>   
+                <p>핸드폰: <select name="phonenumber">
+                            <option value="1" selected>010</option> 
+                            <option value="2">011</option> 
+                            <option value="3">070</option> 
+                        </select>
+                        <input type="text" size="5">-  <input type="text" size="5">
+                </p> 
+                <p>직업: <select name="job">
+                    <option value="1" selected>대학생</option> 
+                    <option value="2">직장인</option> 
+                    <option value="3">주부</option> 
+                    <option value="3">고등학생</option> 
+                </select></p>   
+                <p>inni market 을 접하게 된 경로 (중복체크 허용):<input type="checkbox" name="way" value="invite">웹서핑
+                    <input type="checkbox" name="way" value="insta">instagram
+                    <input type="checkbox" name="way" value="facebook">facebook
+                    <input type="checkbox" name="way" value="friend">지인소개
+                </p>    
+            </fieldset>
+            <p></p>
+            <p id="join">
+            <input type="submit"value="회원가입">
+            <input type="reset"value="다시작성">
+            </p>
+
+        </form>
+
+    </body>
+</html>

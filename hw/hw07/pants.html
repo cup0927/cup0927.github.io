@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>pants</title>
+    <style>
+        * {
+            font-family:sans-serif;
+        }
+        body {
+                background: url(./img/background.jpg)no-repeat center center fixed;
+                background-size:cover;
+            }
+        div {
+            background-color: wheat;
+            border-radius: 10px;
+            padding:30px;
+            box-shadow: 2px 2px 5px rgba(129, 114, 55,0.5);
+            }
+            h1 {
+                text-align:center;
+                color:rgb(151, 84, 8);
+            }
+            #grid {
+                display:grid;
+                grid-template-columns:170px 1fr 1fr 1fr;
+                overflow:auto;
+                margin-top: 50px;
+            }
+            img {
+                padding:10px;
+            }
+
+    </style>
+</head>
+<body>
+    <h1>PANTS</h1>
+    <div id="grid">
+        <img src="./img/pants1.jpg">
+        <div>
+            가격: 15000원
+            <form>
+                <input type="submit" value="장바구니"><a href="./cart.html"></a>
+                <input type="submit" value="바로구매">
+            </form>
+        </div>
+        <img src="./img/pants2.jpg">
+        <div>
+            가격: 20000원
+            <form>
+                <input type="submit" value="장바구니">
+                <input type="submit" value="바로구매">
+            </form>
+        </div>
+        <img src="./img/pants3.jpg">
+        <div>
+            가격: 20000원
+            <form>
+                <input type="submit" value="장바구니">
+                <input type="submit" value="바로구매">
+            </form>
+        </div>
+        <img src="./img/pants4.jpg">
+        <div>
+            가격: 20000원
+            <form>
+                <select name="colors">
+                    <option value="1" selected>BLACK</option>
+                    <option value="2" selected>BEIGE</option>
+                    <option value="1" selected>WHITE</option>
+                </select>
+                <input type="submit" value="장바구니">
+                <input type="submit" value="바로구매">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

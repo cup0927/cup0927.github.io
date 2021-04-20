@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>welcome to inni market!</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        body {
+            /* background: url(./img/background.jpg)no-repeat center center fixed; */
+            background-size: cover;
+            background-color: darksalmon;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: rgb(252, 242, 227);
+            padding-left: 30px;
+            padding-top: 40px;
+            padding-bottom: 10px;
+            position: static;
+            margin-left: 20px;
+            margin-top: 30px;
+            border-style: outset;
+            border-width:5px;
+            border-color:lightsteelblue;
+        }
+
+        #list1 {
+            width: 160px;
+            border: 3px solid rgba(138, 138, 218, 0.5);
+            margin-top: 30px;
+            margin-left: 15px;
+        }
+
+        #list2 {
+            width: 160px;
+            border: 3px solid rgba(138, 138, 218, 0.5);
+            margin-top: 40px;
+            margin-left: 15px;
+        }
+
+        li {
+            font-size: 18px;
+            padding-bottom: 10px;
+            color: rgba(245, 245, 250, 0.5);
+        }
+
+        #cart {
+            width: 48px;
+            height: 50px;
+        }
+
+        #grid {
+            font-size: 12px;
+            font-weight: bold;
+            color: rgb(14, 191, 245);
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            border-top: 1px solid grey;
+        }
+
+        footer {
+            padding-top: 100px;
+        }
+
+        .div2 {
+            border-left: 1px solid grey;
+            padding-left: 10px;
+        }
+
+        #searchbox {
+            position: relative;
+            left: 1050px;
+            top:70px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav {
+            margin-left: 25px;
+            margin-top: 50px;
+            padding: 3px;
+            width: 200px;
+            height: 560px;
+            background-color: rgba(255, 228, 196, 0.6);
+        }
+
+        #search {
+            width: 28px;
+            height: 22px;
+        }
+
+        section {
+            display: inline;
+            position: absolute;
+            left: 100px;
+            top:248px;
+            left:300px;
+        }
+
+        section img {
+            position: relative;
+            left: 100px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>inni market ☺</h1>
+    <div id="searchbox">
+        <form>
+            <input type="text" name="searchbox" placeholder="검색어를 입력하세요">
+            <button type="button" onclick="alert('시스템 점검중입니다 조금있다 다시 검색해주세요')"><img id="search"
+                    src="./img/search.jpg"></button>
+        </form>
+    </div>
+    <nav>
+        <div id="list1">
+            <ul>
+                <li><a href="./top.html">TOP</a></li>
+                <li><a href="./outer.html">OUTER</a></li>
+                <li>BOTTOM</li>
+                <ul>
+                    <li><a href="./skirt.html">skirt</a></li>
+                    <li><a href="./pants.html">pants</a></li>
+                </ul>
+                <li><a href="./bag.html">ETC</a></li>
+            </ul>
+        </div>
+        <div id="list2">
+            <ul>
+                <li><a href="./q&a.html">Q&A</a></li>
+                <li><a href="./cart.html"><img id="cart" src="./img/cart.png"></a></li>
+                <li><a href="./login.html">login</a></li>
+                <li><a href="./join.html">join</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <article>
+            <iframe src="./login.html" frameborder="5" width="700" height="565" ;></iframe>
+            <img src="./img/icon.png">
+        </article>
+    </section>
+    <footer>
+        <div id="grid">
+            <div class="div1">
+                <p>CS</p>
+                <p>010-9464-5984</p>
+                <p>MON-FRI:10AM-6PM &nbsp&nbspLUNCH:12PM-1PM</p>
+                <p>KB 000000-00-000000</p>
+                <P>KIM SOO IN</P>
+            </div>
+            <div class="div2">
+                <P>inni market</P>
+                <P>CEO : 김수인</P>
+                <P>TEL : 010-9464-5984 </P>
+                <P>E-MAIL:cup0927@naver.com</P>
+                <P>ADDRESS: 경기도 성남시 분당구 정자로</P>
+            </div>
+    </footer>
+</body>
+
+</html>
