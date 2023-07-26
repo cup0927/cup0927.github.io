@@ -1,11 +1,9 @@
 ---
 layout: post
-title: "router and subnet mask"
+title: "Router and Subnet mask"
 date: 2023-07-26 18:23:36 +09
-categories: Computer Science Network
+categories: ComputerScience Network
 ---
-
-# Network Part 1_01
 
 Before Diving into the network, I recommend you to read the Data communication sections first!!
 (It deals with the basic concept of Internet protocols, data link layer and Physical Layer)
