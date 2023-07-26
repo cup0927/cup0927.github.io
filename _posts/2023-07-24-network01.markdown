@@ -1,0 +1,72 @@
+---
+layout: post
+title: ""
+date: 2023-07-26 15:10:36 +0530
+categories: Computer Science Network
+---
+
+# Network Part 1_01
+
+Before Diving into the network, I recommend you to read the Data communication sections first!!
+(It deals with the basic concept of Internet protocols, data link layer and Physical Layer)
+
+Then, Let's get started!
+
+## First, What Is the OSI Model?
+
+The Open Systems Interconnection (OSI) model describes seven layers that computer systems use to communicate over a network
+
+-   Application Layer (top of the layer)
+-   Presentation Layer, Session Layer
+-   Transport Layer
+-   ✨Network Layer✨ -> part1 cover this!
+-   Data Link Layer
+-   Physical Layer (Layer 1, bottom of the layer)
+
+the standard model of network
+= router + switch -> LAN (A local area network (LAN) is a collection of devices connected together in one physical location, such as a building, office, or home.)
+
+## Router
+
+Use of a router
+
+• connecting different LAN(sub network)s
+• determining the effective datagram transmission path through other routers on the outside network (routing algorithm)
+• Forwarding datagrams based on IP address _'range'_ information
+• Router has at least two ports
+Assign 2 IP addresses when using 2 ports: 1 external address and 1 internal address
+
+e.g.
+![p1](/assets/01/p1)
+10.5.0.2(external) 192.168.0.1(internal)
+• A host exists on the LAN with an IP address of up to 192.168.0.3 – 8
+
+Warning ⚠
+99% of this contents based on DDWU Network lecture by Professor sc, Lim
+So Please do not use my work without permission
+
+#### Subnet mask
+
+Masking is used to get some bits of the given data
+
+> _Mask and remove 4 bits from the back_
+> Masking “11111111” with “11110000” -> “11110000” (AND)
+> Masking “10101010” with “11110000” -> “10100000”
+
+Subnet(=LAN) mask
+• Used to determine if a given IP address belongs to the same subnet or not
+
+e.g. suppose you have 255.255.255.0 as a subnet mask
+This subnet mask shows that the first 24 bits are all 1 and The rest of the bits are all 0
+With this mask value, turn on the value of the first 24 bits of the IP address and turn off the next 8 bits (AND bit operation)
+203.89.56.12 & mask -> 203.89.56.0
+203.89.56.32 & mask -> 203.89.56.0
+203.89.57.32 & mask -> 203.89.57.0
+
+<font color="red">If IP addresses A and B have the same value after masking , it is determined that they are on the same subnet</font>
+
+reference examples)
+![p2](/assets/01/p2)
+![p3](/assets/01/p3)
+![p4](/assets/01/p4)
+![p5](/assets/01/p5)
